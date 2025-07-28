@@ -7,7 +7,7 @@ import typing
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> typing.Sequence[float]:
+async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     """async func that does as stated above"""
     async_funcs = [wait_random(max_delay) for _ in range(n)]
     results = []
