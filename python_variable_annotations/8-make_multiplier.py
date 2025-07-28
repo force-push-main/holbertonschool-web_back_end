@@ -6,7 +6,7 @@ import typing
 from collections.abc import Callable
 
 
-def make_multiplier(multiplier: float) -> Callable[[float, float], float]:
-    def callback(a_float: float, multiplier: float):
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    def callback(a_float: float):
         return a_float * multiplier
     return callback
