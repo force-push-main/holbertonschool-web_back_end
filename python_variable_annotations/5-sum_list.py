@@ -3,7 +3,7 @@
 """function with type annotations"""
 
 
-def sum_list(input_list: "list[float]") -> float:
+def sum_list(input_list: list[float]) -> float:
     """function that returns sum of list"""
 
     return sum(input_list)
